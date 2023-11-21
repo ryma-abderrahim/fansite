@@ -150,6 +150,7 @@ input{
         body
 ************************/
 
+
 /*****Actualité*****/
 .container{
     display:flex;
@@ -217,8 +218,7 @@ body[data-page="actualite"]{
     bottom: 8px;
     left: 16px;
     color:#0a0a0a;
-    background-color: #eeeeee63;
-    border-radius: 10px;
+    background-color: #eeeeeefb;
     width:230px;
 }
 
@@ -373,7 +373,10 @@ body[data-page="realisation"]{
 }
 
 
+
+
 /*************photosVideo********/
+
 body[data-page="photosVideos"]{
     background-image: url('images/jungkook2.webp');
         background-size:cover;
@@ -412,12 +415,128 @@ body[data-page="photosVideos"]{
 }
   
 
+
 /************** Evénements************/
 body[data-page="evenement"]{
     background-image: url('images/jungkook5.webp');
         background-size:cover;
         background-attachment: fixed;
 }
+
+
+#block { 
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;    
+    height: 100vh;  
+}
+  
+.container3 {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);  
+    padding: 38px;  
+    filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    
+}
+  
+.wrapper {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.banner-image{
+    background-image: url('images/event\ 2.jpg');
+}
+  
+.banner-image2{
+    background-image: url('images/C.jpg');
+} 
+
+.banner-image , .banner-image2 {
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255, 0.255)
+}
+  
+.container3 h1{
+    font-family: 'Righteous', sans-serif;
+    color: rgba(255,255,255,0.98);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+  
+.container3 p {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 150%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+  
+.button-wrapper{
+    margin-top: 18px;
+}
+  
+.btn {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 12px;
+    font-size: 0.8rem;  
+    letter-spacing: 2px;  
+    cursor: pointer;
+}
+  
+.btn + .btn {
+    margin-left: 10px;
+}
+  
+.outline {
+    background: transparent;
+    color: rgba(9, 9, 9, 0.9);
+    border: 1px solid rgba(64, 65, 65, 0.6);
+    transition: all .3s ease;
+    
+}
+  
+.outline:hover{
+    transform: scale(1.125);
+    color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.9);
+    transition: all .3s ease;  
+}
+  
+.fill {
+    background: rgba(11, 11, 11, 0.9);
+    color: rgba(255,255,255,0.95);
+    filter: drop-shadow(0);
+    font-weight: bold;
+    transition: all .3s ease; 
+}
+  
+.fill:hover{
+    transform: scale(1.125);  
+    border-color: rgba(255, 255, 255, 0.9);
+    filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
+    transition: all .3s ease;    
+}
+
 
 
 /**********************
